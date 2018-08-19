@@ -5,15 +5,12 @@
  */
 package bean;
 
-import java.io.Serializable;
 
 /**
  *
  * @author sa
  */
-public class Funcionario implements Serializable{
+public class Funcionario extends Usuario{
     private int id;
     private String nome;
-    private String senha;
-    private String email;
 }

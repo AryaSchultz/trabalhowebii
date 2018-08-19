@@ -5,29 +5,21 @@
  */
 package bean;
 
-import java.io.Serializable;
-
 /**
  *
  * @author sa
  */
-public class Cliente implements Serializable{
+public class Cliente extends Usuario {
     private int id;
     private String nome;
-    private String senha;
-    private String email;
-    private String CPF;    
-    private String atendimentos;
+    private String cpf;    
 
     public Cliente() {
     }
 
-    public Cliente(String nome, String senha, String email, String CPF, String atendimentos) {
+    public Cliente(String nome, String cpf) {
         this.nome = nome;
-        this.senha = senha;
-        this.email = email;
-        this.CPF = CPF;
-        this.atendimentos = atendimentos;
+        this.cpf = cpf;
     }
 
     public int getId() {
@@ -46,36 +38,12 @@ public class Cliente implements Serializable{
         this.nome = nome;
     }
 
-    public String getSenha() {
-        return senha;
+    public String getcpf() {
+        return cpf;
     }
 
-    public void setSenha(String senha) {
-        this.senha = senha;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getCPF() {
-        return CPF;
-    }
-
-    public void setCPF(String CPF) {
-        this.CPF = CPF;
-    }
-
-    public String getAtendimentos() {
-        return atendimentos;
-    }
-
-    public void setAtendimentos(String atendimentos) {
-        this.atendimentos = atendimentos;
+    public void setcpf(String cpf) {
+        this.cpf = cpf;
     }
 
 }
